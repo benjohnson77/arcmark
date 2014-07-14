@@ -114,10 +114,6 @@ set :theme_name, 'simplex'
 # set @analytics_account, like "XX-12345678-9"
 @analytics_account = false
 
-activate :directory_indexes
-
-set :build_dir, "tmp"
-
 # Asset Settings
 set :css_dir, 'css'
 set :js_dir, 'js'
