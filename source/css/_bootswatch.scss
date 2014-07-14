@@ -1,0 +1,141 @@
+
+@mixin btn-shadow($color) {
+
+	@include gradient-vertical-three-colors(lighten($color, 15%), $color, 6%, darken($color, 4%));
+	border: 1px solid darken($color, 10%);
+}
+
+@mixin gradient($from, $to) {
+  background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+  background: -moz-linear-gradient(top,  $from, $to);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+}
+// Tools
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+
+
+// Navbar =====================================================================
+
+.navbar {
+	font-family: $font-family-base;
+	background: $white;
+
+}
+
+.navbar-nav > li > a {
+        color: $darkblue;
+        background: $white;
+}
+
+.navbar-brand {
+        padding: 14px 15px 8px;
+}
+
+// Buttons ====================================================================
+
+.btn {
+	font-family: $font-family-base;
+}
+
+.btn-default,
+.btn-default:hover {
+	@include btn-shadow($btn-default-bg);
+}
+
+.btn-primary,
+.btn-primary:hover {
+	@include btn-shadow($btn-primary-bg);
+}
+
+.btn-success,
+.btn-success:hover {
+	@include btn-shadow($btn-success-bg);
+}
+
+.btn-info,
+.btn-info:hover {
+	@include btn-shadow($btn-info-bg);
+}
+
+.btn-warning,
+.btn-warning:hover {
+	@include btn-shadow($btn-warning-bg);
+}
+
+.btn-danger,
+.btn-danger:hover {
+	@include btn-shadow($btn-danger-bg);
+}
+
+// Typography =================================================================
+
+h1, h2, h3 {
+	font-family: $font-family-headings;
+}
+
+h4, h5, h6 {
+	font-family: $font-family-base;
+}
+
+
+// Tables =====================================================================
+
+// Forms ======================================================================
+
+.has-warning {
+	.help-block,
+	.control-label {
+		color: $brand-danger;
+	}
+
+	.form-control,
+	.form-control:focus {
+		border-color: $brand-danger;
+	}
+}
+
+.has-error {
+	.help-block,
+	.control-label {
+		color: $brand-primary;
+	}
+
+	.form-control,
+	.form-control:focus {
+		border-color: $brand-primary;
+	}
+}
+
+.has-success {
+	.help-block,
+	.control-label {
+		color: $brand-success;
+	}
+
+	.form-control,
+	.form-control:focus {
+		border-color: $brand-success;
+	}
+}
+
+// Navs =======================================================================
+
+.pagination {
+
+	.active > a,
+	.active > a:hover {
+		border-color: #ddd;
+	}
+}
+
+// Indicators =================================================================
+
+// Progress bars ==============================================================
+
+// Containers =================================================================

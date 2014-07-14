@@ -110,9 +110,13 @@ set :site_description, 'Blog description'
 # Select the theme from bootswatch.com.
 # If false, you can get plain bootstrap style.
 # set :theme_name, 'flatly'
-set :theme_name, false
+set :theme_name, 'simplex'
 # set @analytics_account, like "XX-12345678-9"
 @analytics_account = false
+
+activate :directory_indexes
+
+set :build_dir, "build"
 
 # Asset Settings
 set :css_dir, 'css'

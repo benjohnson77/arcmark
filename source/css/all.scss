@@ -3,6 +3,96 @@
 @import "settings";
 @import "imports";
 
-body {
-  margin-top: $marginTopBody;
+body{
+	margin: 0 auto;
+	float:none;
 }
+
+#navigation {
+	font-size:15px;
+}
+
+.navbar-brand {
+	margin: 0px !important; 
+}
+
+#nav {
+	background: $white;
+	margin-bottom: 0;
+
+}
+
+#nav .navbar-nav>li {
+	padding: 0px 1px;
+}
+
+#nav .navbar-nav>li>a {
+	background: $white;
+	color: $darkblue;
+	height: $navheight;
+	padding-top:20px;
+}
+
+#nav .active > a{
+	background: $darkblue !important;
+	color: $white !important;
+	}
+
+#nav	.navbar-nav>li>a:hover {
+	background: $darkblue !important;
+	color: $white !important;
+	}
+
+#subnav {
+	background: $lightblue;
+	height:$navheight;
+	margin: 0 auto;
+	text-align:center;
+
+}
+
+#subnav .navbar-nav {
+	padding: 0px 10px;
+}
+
+#subnav .navbar-nav>li {
+	padding: 0px 10px;
+}
+
+#subnav .navbar-nav>li>a {
+	background: $lightblue;
+	color: $darkblue;
+	height: $navheight;
+	padding-top:20px;
+}
+
+#subnav .active > a{
+	color: $white !important;
+	}
+
+#subnav	.navbar-nav>li>a:hover {
+	color:$white;
+	}
+
+#overview {
+	background: $darkblue;
+	color: $white;
+	@include gradient(#0161a9, #1e8aa9);	
+	height: 400px;
+	text-align: left !important; 
+}
+
+.copy-block{
+		margin-top:15%;
+	}
+
+
+#overview-image {
+	background: $white url(/images/bw-photo1.jpg) ;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 600px;
+}
+
