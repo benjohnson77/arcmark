@@ -22,6 +22,7 @@ gem "middleman-livereload", "~> 3.1.0"
 # Precompilers
 gem 'slim', '~> 2.0.3'
 gem 'sass'
+gem 'bootstrap-sass'
 gem 'coffee-script', '~> 2.2.0'
 
 # For Markdown
