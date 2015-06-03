@@ -11,7 +11,7 @@ $(document).ready(function(){
 		var width = $(id).width();
 		var center = width/2;
 		var R = 100;
-
+		
 		var paper = Raphael(0, top, width, height);
 		xmod = 0;
 		for (i = 0; i < n; i++) { 
@@ -72,6 +72,7 @@ $(document).ready(function(){
 		};
 	};
 	// ElementID , number of arcs, arctype, offset, size 
+	// TODO: ADD RESIZE EVENT
 	var a = arcs('#overview',5,1,15,1500);
 	var a = arcs('#overview',5,2,30,2500);
 	var a = arcs('#overview',5,3,15,2000);
